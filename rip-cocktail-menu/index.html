@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>R.I.P WESTERN BAR · COCKTAIL MENU</title>
+  <meta name="description" content="R.I.P 웨스턴 바의 칵테일 메뉴와 재료 구성 가이드." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta property="og:title" content="R.I.P WESTERN BAR · COCKTAIL MENU" />
+  <meta property="og:description" content="R.I.P 웨스턴 바의 칵테일 메뉴와 재료 구성 가이드." />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <img class="logo" src="assets/logo.jpg" alt="R.I.P WESTERN BAR" />
+      <h1 class="brand">R.I.P <span class="brand-sub">WESTERN BAR</span></h1>
+      <p class="tagline">COCKTAIL MENU</p>
+      <p class="intro">
+        R.I.P의 칵테일 메뉴 설명과 구성을 한 눈에 볼 수 있는 디지털 메뉴판입니다.<br />
+        상황에 따라 가니쉬 및 잔은 달라질 수 있지만, 맛과 용량은 동일합니다.<br />
+        <span class="muted">취향에 맞는 칵테일 추천을 원하시거나 궁금한 점이 있다면 편히 말씀해주세요.<br />주문과 문의는 바텐더에게 부탁드립니다.</span>
+      </p>
+    </div>
+  </header>
+
+  <nav class="catnav" id="catnav" aria-label="카테고리"></nav>
+
+  <main id="menu" class="menu" aria-live="polite"></main>
+
+  <section class="primer" id="primer">
+    <div class="primer-inner">
+      <h2 class="section-title">칵테일은 어떻게 구성되나요?</h2>
+      <p class="primer-lead">
+        대부분의 칵테일은 아래 네 가지 축이 조합되어 만들어집니다. 메뉴의 <em>재료</em>란을 이 순서대로 읽어보시면
+        한 잔의 맛과 도수를 머릿속에 그려볼 수 있어요.
+      </p>
+      <div class="primer-grid">
+        <div class="primer-card">
+          <span class="primer-step">1</span>
+          <h3>베이스 스피릿 <small>Base Spirit</small></h3>
+          <p>술의 중심이 되는 증류주. 진 · 럼 · 보드카 · 데낄라 · 위스키 · 브랜디 중 무엇이냐에 따라 향과 도수의 뼈대가 정해집니다.</p>
+        </div>
+        <div class="primer-card">
+          <span class="primer-step">2</span>
+          <h3>모디파이어 <small>Modifier</small></h3>
+          <p>리큐르 · 베르무트처럼 향과 단맛, 쓴맛을 더해 베이스의 캐릭터를 다듬어주는 보조 술입니다.</p>
+        </div>
+        <div class="primer-card">
+          <span class="primer-step">3</span>
+          <h3>플레이버 <small>Flavor</small></h3>
+          <p>과일 주스 · 시럽 · 우유 · 크림 · 허브가 맛의 색을 결정합니다. 상큼함은 라임/레몬, 달콤함은 시럽이 담당해요.</p>
+        </div>
+        <div class="primer-card">
+          <span class="primer-step">4</span>
+          <h3>피니셔 <small>Finisher</small></h3>
+          <p>토닉 · 사이다 · 콜라 · 진저에일 같은 탄산이나 비터즈로 마무리해서 가벼움, 청량감, 쌉쌀함을 잡아줍니다.</p>
+        </div>
+      </div>
+      <p class="primer-tip">
+        예) <strong>진토닉</strong> = <em>Gin</em>(베이스) + <em>Tonic</em>(피니셔). 단순한 두 줄이지만 향긋한 보타니컬과 쌉쌀한 키니네의 조합이 클래식의 정수입니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="glossary" id="glossary">
+    <div class="glossary-inner">
+      <h2 class="section-title">재료 사전 <small>Ingredient Glossary</small></h2>
+      <p class="muted glossary-lead">메뉴에 등장하는 재료들의 정체와 특징을 정리했어요. 칵테일 이름이 낯설어도 재료만 보면 맛이 가늠됩니다.</p>
+      <div class="glossary-tabs" id="glossary-tabs"></div>
+      <div class="glossary-grid" id="glossary-grid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© R.I.P Western Bar · 메뉴와 사진은 계속 업데이트 중입니다.</p>
+    <p class="muted">Source: <a href="https://talented-web-d59.notion.site/R-I-P-COCKTAIL-245047fbba5680bab021e2b7afc6bc08" target="_blank" rel="noopener">공식 노션 메뉴판</a></p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
