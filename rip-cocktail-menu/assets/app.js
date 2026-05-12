@@ -167,6 +167,18 @@ function renderCard(item){
   if(item.only){
     card.appendChild(el('span', {class:'badge-only'}, 'R.I.P ONLY'));
   }
+  if(item.image){
+    const fig = el('div', {class:'card-image'});
+    const img = el('img', {
+      src: item.image,
+      alt: item.name || 'cocktail',
+      loading: 'lazy',
+      referrerPolicy: 'no-referrer',
+    });
+    img.addEventListener('error', () => fig.classList.add('is-broken'));
+    fig.appendChild(img);
+    card.appendChild(fig);
+  }
   const head = el('div', {class:'card-head'});
   head.appendChild(el('h3', {class:'card-name'}, item.name || ''));
   if(item.price){
